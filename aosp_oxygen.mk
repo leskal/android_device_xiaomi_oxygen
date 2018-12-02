@@ -17,9 +17,11 @@
 $(call inherit-product, device/xiaomi/oxygen/full_oxygen.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+GAPPS_VARIANT := nano
+TARGET_GAPPS_ARCH := arm64
 
-PRODUCT_NAME := lineage_oxygen
+PRODUCT_NAME := aosp_oxygen
 BOARD_VENDOR := Xiaomi
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 
@@ -30,8 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V9.2.1.0.NDDMIEK:user/release-keys"
-
-#PRODUCT_BUILD_PROP_OVERRIDES += \
- #   DEVICE_MAINTAINERS="Pranav Trivedi (pranavaryans)"
-
-BOOTLEG_BUILD_TYPE="Shishufied"

@@ -46,5 +46,3 @@ TARGET_LD_SHIM_LIBS += \
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/oxygen/BoardConfigVendor.mk
-
-
