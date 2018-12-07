@@ -24,6 +24,7 @@ TARGET_KERNEL_CONFIG := hardrock_oxygen_defconfig
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO

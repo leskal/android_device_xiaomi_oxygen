@@ -20,6 +20,7 @@ $(call inherit-product, device/xiaomi/oxygen/full_oxygen.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 GAPPS_VARIANT := nano
 TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := aosp_oxygen
 BOARD_VENDOR := Xiaomi
