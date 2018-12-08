@@ -5,6 +5,9 @@
 # Camera
 persist.camera.HAL3.enabled=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# Treble
+ro.treble.enabled=true
  
 #add Density default
 ro.sf.lcd_density=342
